@@ -4,7 +4,10 @@
 */
 
 function isPalindrome(str) {
-  return true;
+  const lowerStr = str.toLowerCase();
+  const tempstr = lowerStr.split('').toReversed().join('')
+  return lowerStr === tempstr;
 }
 
 module.exports = isPalindrome;
+// TODO- ignore spaces and special charecters
